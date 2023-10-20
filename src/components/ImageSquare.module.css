@@ -1,0 +1,29 @@
+.xl {
+  width: 720px;
+  height: 720px;
+  object-fit: cover;
+}
+
+.lg {
+  width: 580px;
+  height: 580px;
+  object-fit: cover;
+}
+
+.md {
+  width: 460px;
+  height: 460px;
+  object-fit: cover;
+}
+
+.sm {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.xs {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}

@@ -1,0 +1,25 @@
+.section {
+  padding: 48px;
+  background: #eeeeee;
+}
+
+.logo-image {
+  height: 80px;
+  pointer-events: none;
+}
+
+a.link {
+  color: #000000;
+}
+
+a.visited {
+  color: #000000;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  color: #555555
+}
