@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c7e910c.css",
+    "main.js": "/static/js/main.f0cb09e3.js",
+    "static/js/787.edfb80c9.chunk.js": "/static/js/787.edfb80c9.chunk.js",
+    "static/media/BoxedTube.png": "/static/media/BoxedTube.ba47d3e33dcf12f8734f.png",
+    "static/media/packedTube.png": "/static/media/packedTube.afc0e6fa0e5bf72e2a66.png",
+    "static/media/panels_american_flag.png": "/static/media/panels_american_flag.fc8cadeeaa49ab649e24.png",
+    "static/media/rowCeilingPanels.png": "/static/media/rowCeilingPanels.b4591143270d476a86c2.png",
+    "static/media/inventoryRack1.png": "/static/media/inventoryRack1.966e163932b4faeba60d.png",
+    "static/media/oxygenTanks.png": "/static/media/oxygenTanks.3d200b2c8a939a8f206a.png",
+    "static/media/inventoryFishEye3.png": "/static/media/inventoryFishEye3.050bffbe1dee8cc84e74.png",
+    "static/media/inventoryRack2.png": "/static/media/inventoryRack2.089e17715b3448a8aa9f.png",
+    "static/media/ceiling_panels.png": "/static/media/ceiling_panels.2ef1903ea33c12f6f451.png",
+    "static/media/elbows.jpg": "/static/media/elbows.3345fe9cbdd50aefb8b2.jpg",
+    "static/media/panelRender.png": "/static/media/panelRender.bec45a9930a1b1f585ab.png",
+    "static/media/cappedTees.jpg": "/static/media/cappedTees.08fae5b0cccf5d76e64c.jpg",
+    "static/media/ceilingPanelInstalled.jpg": "/static/media/ceilingPanelInstalled.9e79541a0db0ce22134f.jpg",
+    "static/media/logo_2023_150ppi.png": "/static/media/logo_2023_150ppi.a0565b2074e6e4401725.png",
+    "static/media/linkedin_black_logo.png": "/static/media/linkedin_black_logo.ba884e1f9ad4362348c1.png",
+    "index.html": "/index.html",
+    "main.8c7e910c.css.map": "/static/css/main.8c7e910c.css.map",
+    "main.f0cb09e3.js.map": "/static/js/main.f0cb09e3.js.map",
+    "787.edfb80c9.chunk.js.map": "/static/js/787.edfb80c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c7e910c.css",
+    "static/js/main.f0cb09e3.js"
+  ]
+}
