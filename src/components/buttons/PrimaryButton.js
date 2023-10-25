@@ -2,6 +2,13 @@ import React from "react";
 import { Button } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
+/* props map
+boxShadow=false
+size=medium
+onClick=() => {}
+text="Click me"
+*/
+
 const PrimaryButton = (props) => {
   const theme = useTheme();
   let boxShadow = "none";

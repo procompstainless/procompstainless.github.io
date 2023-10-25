@@ -44,10 +44,11 @@ const Navbar = () => {
     } else if (newValue === 0) {
       console.log("Navigating home.");
       navigate("/");
-    } else if (newValue === 1) {
-      console.log("Navigating to about page.");
-      navigate("/about");
     }
+    // else if (newValue === 1) {
+    //   console.log("Navigating to about page.");
+    //   navigate("/about");
+    // }
     setValue(newValue);
   };
 
@@ -69,7 +70,7 @@ const Navbar = () => {
             }}
           >
             <Tab label="Home" sx={{ fontWeight: "bold" }} />
-            <Tab label="About" sx={{ fontWeight: "bold" }} />
+            {/* <Tab label="About" sx={{ fontWeight: "bold" }} /> */}
             <Tab
               label="Products"
               id="products-button"
