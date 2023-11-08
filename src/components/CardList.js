@@ -36,7 +36,9 @@ const CardList = ({ list }) => {
             </Box>
           </CardContent>
           <CardActions>
-            <Button onClick={Navigate("/" + item.id)}></Button>
+            <Button onClick={() => (window.location.href = "" + item.path)}>
+              Learn More
+            </Button>
           </CardActions>
         </Card>
       );

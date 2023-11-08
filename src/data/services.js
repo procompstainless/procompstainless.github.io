@@ -16,6 +16,7 @@ import AUTOMATION_EQUIPMENT from "../images/ceiling_panels.png";
 const products = {
   "custom-fabrication": {
     id: "custom-fabrication",
+    path: "/services/custom-fabrication",
     title: "Custom Fabrication",
     hero: {
       label: "Custom Fabrication",
@@ -23,9 +24,8 @@ const products = {
       body: "Our shop team is led by over 35 years of industry experience in stainless steel fabrication. We can build almost anything from steel materials. We currently put our skills to use fabricating clean room utility panels from hygienic materials and process instruments.",
       button: "Get a Quote",
       onClick: () => {
-        console.log(
-          "this is the button function for 'Custom fabrication' label"
-        );
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: UTILITY_PANELS,
     },
@@ -37,7 +37,8 @@ const products = {
         body: "Our team has been in the business for decades. We know how to deliver for your needs, keep compliant, and do it on time. You can rely on our experience for your next job.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'EXPERIENCE' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: DESIGN_IMAGE,
       },
@@ -48,7 +49,8 @@ const products = {
         body: "Our fab shop is where the magic happens. We have the equipment we need to fabricate panels efficiently. You can trust us to complete your job the right way and stay on schedule.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'OUR SHOP' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: EXPERTISE_IMAGE,
       },
@@ -56,6 +58,7 @@ const products = {
   },
   "engineering-design": {
     id: "engineering-design",
+    path: "/services/engineering-design",
     title: "Engineering Design",
     hero: {
       label: "Engineering Design",
@@ -63,9 +66,8 @@ const products = {
       body: "Our team of engineers are brought into the picture early on in the design process. Our clients depend on us to bring working solutions to the table. We provide 3-D models of equipment structures to determine feasibility and configure new design concepts.",
       button: "Request Quote",
       onClick: () => {
-        console.log(
-          "this is the button function for 'Engineering Design' label"
-        );
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: PIPE_AND_TUBE,
     },
@@ -77,7 +79,8 @@ const products = {
         body: "Imagination is the most important tool in providing value for our clients. We are constantly looking improve structural designs to enhance functionality, safety, and compliance.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'CREATIVITY' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: TUBE_DETAILS,
       },
@@ -88,7 +91,8 @@ const products = {
         body: "We use cutting-edge modeling software to provide the most precise visuals for our clients. A more accurate plan leads to more accurate results.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'TECHNOLOGY' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: TUBE_STOCK,
       },
@@ -96,6 +100,7 @@ const products = {
   },
   "orbital-welding": {
     id: "orbital-welding",
+    path: "/services/orbital-welding",
     title: "Orbital Welding",
     hero: {
       label: "Orbital Welding",
@@ -103,7 +108,8 @@ const products = {
       body: "We have trained professionals operating our orbital welding machines. We provide weld coupons, weld maps, and keep stringent records of all our welds to control quality.",
       button: "Request Quote",
       onClick: () => {
-        console.log("this is the button function for 'orbital-welding' label");
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: FITTINGS,
     },
@@ -136,6 +142,7 @@ const products = {
   },
   "oxygen-service": {
     id: "oxygen-service",
+    path: "/services/oxygen-service",
     title: "Oxygen Service",
     hero: {
       label: "Oxygen Service",
@@ -143,7 +150,8 @@ const products = {
       body: "Our cleaning process is performed for all orders leaving our shop. All inventory tubing and piping is certified cleaned for oxygen service and packaged in our facility before being shipped to our clients.",
       button: "Request Quote",
       onClick: () => {
-        console.log("this is the button function for 'oxygen-service' label");
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: INSTRUMENTATION,
     },
@@ -187,6 +195,7 @@ const products = {
   },
   "quality-inspection": {
     id: "quality-inspection",
+    path: "/services/quality-inspection",
     title: "Quality Inspection",
     hero: {
       label: "quality inspection",
@@ -194,9 +203,8 @@ const products = {
       body: "It isn't too long ago when the processing industry did not have ASME BPE standards. The ProCOMP team was involved in forming the BPE specifications we adhere to today.",
       button: "Request Quote",
       onClick: () => {
-        console.log(
-          "this is the button function for 'quality-inspection' label"
-        );
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: INSTRUMENTATION,
     },

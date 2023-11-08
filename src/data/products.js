@@ -16,6 +16,7 @@ import AUTOMATION_EQUIPMENT from "../images/ceiling_panels.png";
 const products = {
   "utility-panels": {
     id: "utility-panels",
+    path: "/products/utility-panels",
     title: "Utility Panels",
     hero: {
       label: "UTILITY PANELS",
@@ -23,7 +24,8 @@ const products = {
       body: "Our utility panels can be installed in the ceiling or the wall and have been used to add different utilities into the clean room space, namely oxygen, nitorgen, clean air, and water.",
       button: "Get a Quote",
       onClick: () => {
-        console.log("this is the button function for 'UTILITY PANELS' label");
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: UTILITY_PANELS,
     },
@@ -35,7 +37,8 @@ const products = {
         body: "Our team of engineers is led by decades of experience. Our designers use the latest modeling software and work directly with the fabrication team to ensure designs meet construction requirements",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'DESIGN' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: DESIGN_IMAGE,
       },
@@ -46,7 +49,8 @@ const products = {
         body: "The leaders on our team have been in the process industry business for over 35 years. We've dedicated our lives to this industry and our wisdom guides us in delivering top quality process solutions.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'EXPERTISE' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: EXPERTISE_IMAGE,
       },
@@ -54,6 +58,7 @@ const products = {
   },
   "pipe-and-tube": {
     id: "pipe-and-tube",
+    path: "/products/pipe-and-tube",
     title: "Pipe and Tube",
     hero: {
       label: "PIPE AND TUBE",
@@ -61,7 +66,8 @@ const products = {
       body: "We are the most competitive source for high quality, hygienic tubing across the United States. We have thousands of feet in stock.",
       button: "Request Quote",
       onClick: () => {
-        console.log("this is the button function for 'pipe and tube' label");
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: PIPE_AND_TUBE,
     },
@@ -73,7 +79,8 @@ const products = {
         body: "We only sell high-purity stainless steel tubing that is accompanied with the right documentation to certify quality standards our met. We also provide oxygen cleaning service upon request.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'standards' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: TUBE_DETAILS,
       },
@@ -84,7 +91,8 @@ const products = {
         body: "We typically have SF1. [insert details about our tubing stock.]",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'EXPERTISE' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: TUBE_STOCK,
       },
@@ -95,7 +103,8 @@ const products = {
         body: "[insert details about our tubing services.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'services' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: TUBE_SERVICES,
       },
@@ -103,6 +112,7 @@ const products = {
   },
   fittings: {
     id: "fittings",
+    path: "/products/fittings",
     title: "Fittings",
     hero: {
       label: "FITTINGS",
@@ -110,7 +120,8 @@ const products = {
       body: "[INSERT]",
       button: "Request Quote",
       onClick: () => {
-        console.log("this is the button function for 'FITTINGS' label");
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: FITTINGS,
     },
@@ -122,9 +133,8 @@ const products = {
         body: "Our stock items are from MaxPure and....",
         button: "Get a Quote",
         onClick: () => {
-          console.log(
-            "this is the button function for the 'our partners' label"
-          );
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: FITTINGS_DETAILS,
       },
@@ -135,7 +145,8 @@ const products = {
         body: "[insert details about our fittings stock.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'OUR STOCK' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: FITTINGS_STOCK,
       },
@@ -143,6 +154,7 @@ const products = {
   },
   instrumentation: {
     id: "instrumentation",
+    path: "/products/instrumentation",
     title: "Instrumentation",
     hero: {
       label: "INSTRUMENTATION",
@@ -150,7 +162,8 @@ const products = {
       body: "[INSERT]",
       button: "Request Quote",
       onClick: () => {
-        console.log("this is the button function for 'instrumentation' label");
+        window.location.href =
+          "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
       },
       image: INSTRUMENTATION,
     },
@@ -162,9 +175,8 @@ const products = {
         body: "Our stock items are from PBM and Steriflo....",
         button: "Get a Quote",
         onClick: () => {
-          console.log(
-            "this is the button function for the 'processing instruments' label"
-          );
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: PROCESSING_INSTRUMENTS,
       },
@@ -175,7 +187,8 @@ const products = {
         body: "[insert details about our electrical offerings.]",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'electrical' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: ELECTRICAL_COMPONENTS,
       },
@@ -186,7 +199,8 @@ const products = {
         body: "[insert details about our automation capabilities.",
         button: "Get a Quote",
         onClick: () => {
-          console.log("this is the button function for the 'AUTOMATION' label");
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
         },
         image: AUTOMATION_EQUIPMENT,
       },

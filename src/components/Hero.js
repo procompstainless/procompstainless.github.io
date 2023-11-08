@@ -56,7 +56,7 @@ const Hero = (props) => {
             <SecondaryHeroButton
               text={props.secondaryButton}
               size="large"
-              onClick={props.primaryOnClick}
+              onClick={props.secondaryOnClick}
             />
           </Box>
         </Box>

@@ -21,7 +21,6 @@ const HomePage = () => {
     "engineering-design",
     "orbital-welding",
     "oxygen-service",
-    "quality-inspection",
   ];
   const serviceCardList = Object.entries(services)?.map((entry) => {
     if (servicesToShow.length < 1 || servicesToShow.indexOf(entry[1].id) > -1) {
@@ -36,9 +35,14 @@ const HomePage = () => {
         title="Solutions for your hygienic process facilities."
         image={HERO_IMAGE}
         primaryButton="Contact Our Team"
-        primaryOnClick={() => {}}
+        primaryOnClick={() => {
+          window.location.href =
+            "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
+        }}
         secondaryButton="Learn More"
-        secondaryOnClick={() => {}}
+        secondaryOnClick={() => {
+          window.location.href = "/services/custom-fabrication";
+        }}
       ></Hero>
       <WideSection title="Custom Fabrication">
         <CardList list={productsCardList} />

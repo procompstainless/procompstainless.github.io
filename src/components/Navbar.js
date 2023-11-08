@@ -196,7 +196,14 @@ const Navbar = () => {
             <Typography>{config.phoneNumber}</Typography>
           </Box>
           <Box>
-            <PrimaryButton text="Send us a message" size="medium" />
+            <PrimaryButton
+              text="Send us a message"
+              size="medium"
+              onClick={() => {
+                window.location.href =
+                  "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
+              }}
+            />
           </Box>
         </Box>
       </Box>
