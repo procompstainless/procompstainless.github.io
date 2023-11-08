@@ -11,12 +11,11 @@ import {
 import React from "react";
 import { Navigate } from "react-router-dom";
 
-const CardList = ({ list, displayItems }) => {
-  const Cards = list?.map((item) => {
-    console.log(item.id);
-    if (displayItems.indexOf(item.id) > -1) {
+const CardList = ({ list }) => {
+  const Cards = list.map((item) => {
+    if (!!item) {
       return (
-        <Card sx={{ width: "100%" }} id={item.id}>
+        <Card sx={{ width: "100%" }} id={item?.id}>
           <CardMedia
             sx={{ height: 140 }}
             image={item.hero.image}
@@ -41,8 +40,6 @@ const CardList = ({ list, displayItems }) => {
           </CardActions>
         </Card>
       );
-    } else {
-      return "";
     }
   });
 

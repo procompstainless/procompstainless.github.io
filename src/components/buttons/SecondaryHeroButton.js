@@ -27,7 +27,7 @@ const SecondaryHeroButton = (props) => {
       }}
       onClick={props.onClick}
     >
-      {props.text}
+      {props.text ? props.text : "Click Me"}
     </Button>
   );
 };

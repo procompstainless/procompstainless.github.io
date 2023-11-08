@@ -21,7 +21,7 @@ const ServicePage = () => {
         onClick={services[serviceID].hero.onClick}
         image={services[serviceID].hero.image}
       ></SplitHero>
-      {services[serviceID].articles.map((article) => {
+      {services[serviceID].articles?.map((article) => {
         return (
           <HighlightSection
             id={article.id}
