@@ -9,19 +9,19 @@ import products from "../../data/products";
 const ProductPage = () => {
   // determine the type of product by grabbing that information from the URL.
   const params = useParams();
-  let productId = params.id;
+  let productID = params.id;
 
   return (
     <>
       <SplitHero
-        label={products[productId].hero.label}
-        title={products[productId].hero.title}
-        body={products[productId].hero.body}
-        button={products[productId].hero.button}
-        onClick={products[productId].hero.onClick}
-        image={products[productId].hero.image}
+        label={products[productID].hero.label}
+        title={products[productID].hero.title}
+        body={products[productID].hero.body}
+        button={products[productID].hero.button}
+        onClick={products[productID].hero.onClick}
+        image={products[productID].hero.image}
       ></SplitHero>
-      {products[productId].articles.map((article) => {
+      {products[productID].articles.map((article) => {
         return (
           <HighlightSection
             id={article.id}
