@@ -1,3 +1,5 @@
+import { useTheme } from "@emotion/react";
+import { ArrowForward } from "@mui/icons-material";
 import {
   Box,
   Card,
@@ -7,17 +9,31 @@ import {
   CardActions,
   Button,
   Stack,
+  useMediaQuery,
 } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 
 const CardList = ({ list }) => {
+  const theme = useTheme();
+  const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
+  const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
+  const isLgScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
   const Cards = list.map((item) => {
     if (!!item) {
       return (
         <Card sx={{ width: "100%" }} id={item?.id}>
           <CardMedia
-            sx={{ height: 140 }}
+            sx={{
+              height: isLgScreen
+                ? 360
+                : isMdScreen
+                ? 240
+                : isSmScreen
+                ? 160
+                : 120,
+            }}
             image={item.hero.image}
             title={item.id}
           />
@@ -38,6 +54,7 @@ const CardList = ({ list }) => {
           <CardActions>
             <Button onClick={() => (window.location.href = "" + item.path)}>
               Learn More
+              <ArrowForward />
             </Button>
           </CardActions>
         </Card>
