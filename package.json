@@ -1,6 +1,6 @@
 {
   "name": "procomp-site",
-  "homepage": "https://github.com/procompstainless/procompstainless.github.io.git",
+  "homepage": "https://procompstainless.github.io.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
