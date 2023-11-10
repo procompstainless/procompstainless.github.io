@@ -12,9 +12,10 @@ import {
   useMediaQuery,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const CardList = ({ list }) => {
+  const navigate = useNavigate;
   const theme = useTheme();
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
@@ -56,7 +57,7 @@ const CardList = ({ list }) => {
             </Box>
           </CardContent>
           <CardActions>
-            <Button onClick={() => (window.location.href = "" + item.path)}>
+            <Button onClick={navigate(item.path)}>
               Learn More
               <ArrowForward />
             </Button>

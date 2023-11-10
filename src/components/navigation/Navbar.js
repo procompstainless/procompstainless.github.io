@@ -55,10 +55,9 @@ const Navbar = () => {
                 <PrimaryButton
                   text="Send us a message"
                   size="medium"
-                  onClick={() => {
-                    window.location.href =
-                      "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
-                  }}
+                  onClick={navigate(
+                    "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp"
+                  )}
                 />
               </Box>
             </Box>

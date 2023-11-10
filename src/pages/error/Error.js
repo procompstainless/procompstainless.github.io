@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Error.module.css";
 import PrimaryButton from "../../components/buttons/PrimaryButton";
+import { useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
   return (
@@ -16,9 +17,7 @@ const ErrorPage = () => {
           className={styles.center}
           boxShadow={false}
           size="medium"
-          onClick={() => {
-            window.location.href = "/";
-          }}
+          onClick={useNavigate("/")}
           text="Go Back Home"
         />
       </div>

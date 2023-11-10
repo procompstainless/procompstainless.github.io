@@ -36,6 +36,7 @@ import {
 import { useTheme } from "@emotion/react";
 import { styled } from "@mui/material/styles";
 import TextButton from "../buttons/TextButton";
+import { useNavigate } from "react-router-dom";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
@@ -48,6 +49,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 
 const NavDrawer = () => {
   const theme = useTheme();
+  const navigate = useNavigate();
 
   const [anchorElMenu, setAnchorElMenu] = useState(null);
   const [open, setOpen] = React.useState(false);
@@ -129,11 +131,7 @@ const NavDrawer = () => {
           //   </ListSubheader>
           // }
         >
-          <ListItemButton
-            onClick={() => {
-              window.location.href = "/";
-            }}
-          >
+          <ListItemButton onClick={navigate("/")}>
             <ListItemIcon>
               <Home />
             </ListItemIcon>
@@ -150,33 +148,25 @@ const NavDrawer = () => {
             <List component="div" disablePadding>
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/products/utility-panels";
-                }}
+                onClick={navigate("/products/utility-panels")}
               >
                 <ListItemText primary="Utility Panels" />
               </ListItemButton>
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/products/pipe-and-tube";
-                }}
+                onClick={navigate("/products/pipe-and-tube")}
               >
                 <ListItemText primary="Pipe and Tube" />
               </ListItemButton>
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/products/fittings";
-                }}
+                onClick={navigate("/products/fittings")}
               >
                 <ListItemText primary="Fittings" />
               </ListItemButton>
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/products/instrumentation";
-                }}
+                onClick={navigate("/products/instrumentation")}
               >
                 <ListItemText primary="Instrumentation" />
               </ListItemButton>
@@ -193,52 +183,41 @@ const NavDrawer = () => {
             <List component="div" disablePadding>
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/services/custom-fabrication";
-                }}
+                onClick={navigate("/services/custom-fabrication")}
               >
                 <ListItemText primary="Custom Fabrication" />
               </ListItemButton>
 
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/services/engineering-design";
-                }}
+                onClick={navigate("/services/engineering-design")}
               >
                 <ListItemText primary="Engineering Design" />
               </ListItemButton>
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/services/orbital-welding";
-                }}
+                onClick={navigate("/services/orbital-welding")}
               >
                 <ListItemText primary="Orbital Welding" />
               </ListItemButton>
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/services/oxygen-services";
-                }}
+                onClick={navigate("/services/oxygen-services")}
               >
                 <ListItemText primary="Oxygen Service" />
               </ListItemButton>
               <ListItemButton
                 sx={{ pl: 4 }}
-                onClick={() => {
-                  window.location.href = "/services/quality-inspection";
-                }}
+                onClick={navigate("/services/quality-inspection")}
               >
                 <ListItemText primary="Quality Inspection" />
               </ListItemButton>
             </List>
           </Collapse>
           <ListItemButton
-            onClick={() => {
-              window.location.href =
-                "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp";
-            }}
+            onClick={navigate(
+              "https://procomp-inc-44078592.hubspotpagebuilder.com/high-quality-materials-and-custom-solutions-contact-our-team-procomp"
+            )}
           >
             <ListItemIcon>
               <Markunread />
