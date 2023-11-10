@@ -13,10 +13,20 @@ const WideSection = (props) => {
   return (
     <section>
       <Box
-        className={`${styles["section"]} `}
-        sx={{ background: props.background }}
+        className={`${styles["section"]}`}
+        sx={{
+          background: props.background,
+          padding: isLgScreen
+            ? "48px 24px"
+            : isSmScreen
+            ? "36px 18px"
+            : "24px 12px",
+        }}
       >
-        <Typography variant="h2" className={styles["title"]}>
+        <Typography
+          variant={isLgScreen ? "h2" : isSmScreen ? "h3" : "h4"}
+          className={styles["title"]}
+        >
           {props.title}
         </Typography>
         {props.children}

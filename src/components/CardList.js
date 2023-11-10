@@ -45,7 +45,11 @@ const CardList = ({ list }) => {
             </Box>
             <Box display={"flex"}>
               <Box justifyContent={"flex-start"}>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  textAlign={"start"}
+                >
                   {item.hero.title}
                 </Typography>
               </Box>
@@ -67,8 +71,10 @@ const CardList = ({ list }) => {
       <Stack
         container
         direction={"row"}
-        spacing={4}
+        spacing={isLgScreen ? 4 : isSmScreen ? 3 : 2}
         justifyContent={"space-evenly"}
+        useFlexGap
+        flexWrap={isMdScreen ? "" : "wrap"}
       >
         {!!Cards && Cards}
       </Stack>

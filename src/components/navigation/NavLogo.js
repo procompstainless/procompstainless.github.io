@@ -6,7 +6,7 @@ import styles from "./NavLogo.module.css";
 
 // import assets
 import { Box } from "@mui/material";
-import LOGO_IMAGE from "../images/logo_2023_150ppi.png";
+import LOGO_IMAGE from "../../images/logo_2023_150ppi.png";
 
 const NavLogo = () => {
   return (

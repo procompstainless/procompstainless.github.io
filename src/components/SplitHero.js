@@ -22,12 +22,13 @@ const SplitHero = (props) => {
   const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
   const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
   const isLgScreen = useMediaQuery(theme.breakpoints.up("lg"));
+  const isXsScreen = useMediaQuery(theme.breakpoints.up("xs"));
 
   return (
     <>
       <section className={styles["section"]}>
         <Grid container direction={"row"} className={styles["grid"]}>
-          <Grid item xs={6} className={styles["text-panel"]}>
+          <Grid item sm={6} xs={12} className={styles["text-panel"]}>
             <Article
               label={props.label}
               title={props.title}
@@ -42,16 +43,19 @@ const SplitHero = (props) => {
               textAlign="right"
             />
           </Grid>
-          <Grid
-            item
-            xs={6}
-            style={{
-              backgroundImage: `url(${props.image})`,
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-            }}
-          ></Grid>
+          {isSmScreen && (
+            <Grid
+              item
+              sm={6}
+              xs={12}
+              style={{
+                backgroundImage: `url(${props.image})`,
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+              }}
+            ></Grid>
+          )}
         </Grid>
       </section>
     </>

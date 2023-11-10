@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
-const SecondaryButton = (props) => {
+const TextButton = (props) => {
   const theme = useTheme();
   let boxShadow = "none";
 
@@ -15,12 +15,6 @@ const SecondaryButton = (props) => {
       size={props.size} // small, medium, large
       sx={{
         color: theme.palette.primary.main,
-        border: props.noOutline ? "" : "2px solid",
-        borderColor: theme.palette.primary.main,
-        ":hover": {
-          filter: "opacity(0.70)",
-        },
-        ...props.sx,
       }}
       onClick={props.onClick}
     >
@@ -29,4 +23,4 @@ const SecondaryButton = (props) => {
   );
 };
 
-export default SecondaryButton;
+export default TextButton;

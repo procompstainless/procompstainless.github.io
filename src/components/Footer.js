@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography, Box } from "@mui/material";
+import { Grid, Stack, Typography, Box, useMediaQuery } from "@mui/material";
 import styles from "./Footer.module.css";
 import React from "react";
 import LINKEDIN_LOGO from "../images/linkedin_black_logo.png";
@@ -7,13 +7,19 @@ import LOGO_IMAGE from "../images/logo_2023_150ppi.png";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { Link } from "react-router-dom";
+import { useTheme } from "@emotion/react";
 
 const Footer = () => {
+  const theme = useTheme();
+  const isSmScreen = useMediaQuery(theme.breakpoints.up("sm"));
+  const isMdScreen = useMediaQuery(theme.breakpoints.up("md"));
+  const isLgScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
   return (
     <section>
       <Box className={`${styles["section"]} `}>
         <Grid container spacing={3} direction={"row"}>
-          <Grid item xs={6}>
+          <Grid item xs={isMdScreen ? 6 : 12}>
             <Stack direction={"column"} spacing={2}>
               <Box>{/*logo*/}</Box>
               <Box>
@@ -55,32 +61,37 @@ const Footer = () => {
                 Copyright and terms of service
               </Typography>
             </Stack>
-          </Grid>
-          <Grid item xs={1}></Grid>
-          <Grid item xs={2}>
-            <Stack direction={"column"} spacing={2}>
-              <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-                Services
-              </Typography>
-              <Link to="/utility-panels">Custom Fabrication</Link>
-              <Link to="/engineering-design">Engineering Design</Link>
-              <Link to="/orbital-welding">Orbital Welding</Link>
-              <Link to="/oxygen-cleaning">Oxygen Cleaning</Link>
-              <Link to="/quality-control">Quality Control</Link>
-            </Stack>
-          </Grid>
-          <Grid item xs={2}>
-            <Stack direction={"column"} spacing={2}>
-              <Typography variant="body1" sx={{ fontWeight: "bold" }}>
-                Products
-              </Typography>
-              <Link to="/utility-panels">Utility Panels</Link>
-              <Link to="/pipe-tube">Piping and Tubing</Link>
-              <Link to="/fittings">Fittings</Link>
-              <Link to="/instrumentation">Instrumentation</Link>
-            </Stack>
-          </Grid>
-          <Grid item xs={1}></Grid>
+          </Grid>{" "}
+          {isMdScreen && (
+            <>
+              <Grid item xs={0} sm={1}></Grid>
+              <Grid item xs={5} md={2}>
+                <Stack direction={"column"} spacing={2}>
+                  <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                    Products
+                  </Typography>
+                  <Link to="/utility-panels">Utility Panels</Link>
+                  <Link to="/pipe-tube">Piping and Tubing</Link>
+                  <Link to="/fittings">Fittings</Link>
+                  <Link to="/instrumentation">Instrumentation</Link>
+                </Stack>
+              </Grid>
+              <Grid item xs={0.5}></Grid>{" "}
+              <Grid item xs={5} md={2}>
+                <Stack direction={"column"} spacing={2}>
+                  <Typography variant="body1" sx={{ fontWeight: "bold" }}>
+                    Services
+                  </Typography>
+                  <Link to="/utility-panels">Custom Fabrication</Link>
+                  <Link to="/engineering-design">Engineering Design</Link>
+                  <Link to="/orbital-welding">Orbital Welding</Link>
+                  <Link to="/oxygen-cleaning">Oxygen Cleaning</Link>
+                  <Link to="/quality-control">Quality Control</Link>
+                </Stack>
+              </Grid>
+              <Grid item xs={0.5}></Grid>{" "}
+            </>
+          )}
         </Grid>
       </Box>
     </section>

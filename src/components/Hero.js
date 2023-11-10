@@ -40,14 +40,14 @@ const Hero = (props) => {
         <Box className={styles["content"]}>
           <Box className={styles["text-box"]}>
             <Typography
-              variant="h1"
+              variant={isLgScreen ? "h1" : isSmScreen ? "h2" : "h3"}
               fontWeight={600}
               className={styles["text"]}
             >
               {props.title}
             </Typography>
           </Box>
-          <Box flex={"true"} flexDirection={"row"}>
+          <Box flex={"true"} flexDirection={"row"} sx={{ padding: "12px" }}>
             <PrimaryHeroButton
               text={props.primaryButton}
               size="large"
